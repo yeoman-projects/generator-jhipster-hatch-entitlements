@@ -85,7 +85,19 @@ module.exports = JhipsterGenerator.extend({
                 );
             };
 
-            this.template('dummy.txt', 'dummy.txt', this, {});
+            this.template('src/main/java/package/config/_HatchAuthorizationConfiguration.java', `${javaDir}config/HatchAuthorizationConfiguration.java`);
+
+            this.template('src/main/java/package/security/entitlements/_HatchEntitlement.java', `${javaDir}security/entitlements/HatchEntitlement.java`);
+            this.template('src/main/java/package/security/entitlements/_HatchEntitlementProvider.java', `${javaDir}security/entitlements/HatchEntitlementProvider.java`);
+            this.template('src/main/java/package/security/entitlements/_HatchPermission.java', `${javaDir}security/entitlements/HatchPermission.java`);
+            this.template('src/main/java/package/security/entitlements/custommethodsecurityexpression/_HatchEntitlementMethodSecurityExpressionHandler.java', `${javaDir}security/entitlements/custommethodsecurityexpression/HatchEntitlementMethodSecurityExpressionHandler.java`);
+            this.template('src/main/java/package/security/entitlements/custommethodsecurityexpression/_HatchEntitlementMethodSecurityExpressionRoot.java', `${javaDir}security/entitlements/custommethodsecurityexpression/HatchEntitlementMethodSecurityExpressionRoot.java`);
+            this.template('src/main/java/package/security/entitlements/inmemoryprovider/_HatchEntitlementsInMemoryProvider.java', `${javaDir}security/entitlements/inmemoryprovider/HatchEntitlementsInMemoryProvider.java`);
+            this.template('src/main/java/package/security/entitlements/inmemoryprovider/_HatchEntitlementsInMemoryStore.java', `${javaDir}security/entitlements/inmemoryprovider/HatchEntitlementsInMemoryStore.java`);
+            this.template('src/main/java/package/security/entitlements/inmemoryprovider/builder/_EntitlementsBuilder.java', `${javaDir}security/entitlements/inmemoryprovider/builder/EntitlementsBuilder.java`);
+            this.template('src/main/java/package/security/entitlements/inmemoryprovider/builder/_PermissionBuilder.java', `${javaDir}security/entitlements/inmemoryprovider/builder/PermissionBuilder.java`);
+
+
         },
 
         updateConfig() {
