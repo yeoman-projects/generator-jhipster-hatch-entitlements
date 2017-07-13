@@ -109,7 +109,10 @@ module.exports = JhipsterGenerator.extend({
         if (this.buildTool === 'maven') {
         }
         if (this.buildTool === 'gradle') {
+            console.log('hej hacth it is gradle');
         }
+
+        console.log('hatchhatch');
 
         this.template('src/main/java/package/security/entitlements/_HatchEntitlement.java', `${javaDir}security/entitlements/_HatchEntitlement.java`);
         this.template('src/main/java/package/security/entitlements/_HatchEntitlementProvider.java', `${javaDir}security/entitlements/HatchEntitlementProvider.java`);
