@@ -111,6 +111,13 @@ module.exports = JhipsterGenerator.extend({
         if (this.buildTool === 'gradle') {
         }
 
+
+        try {
+            this.registerModule('generator-jhipster-hatch-entitlements', 'entity', 'post', 'app', 'Add support for entitlements');
+        } catch (err) {
+            this.log(`${chalk.red.bold('WARN!')} Could not register as a jhipster entity post creation hook...\n`);
+        }
+
         this.template('src/main/java/package/config/_HatchAuthorizationConfiguration.java', `${javaDir}config/HatchAuthorizationConfiguration.java`);
 
         this.template('src/main/java/package/security/entitlements/_HatchEntitlement.java', `${javaDir}security/entitlements/HatchEntitlement.java`);
