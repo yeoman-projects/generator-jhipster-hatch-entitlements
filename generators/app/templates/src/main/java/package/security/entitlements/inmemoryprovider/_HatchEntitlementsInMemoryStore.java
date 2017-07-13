@@ -1,9 +1,9 @@
 package <%=packageName%>.entitlements.inmemoryprovider;
 
 
-import com.mycompany.myapp.domain.PersistentAuditEvent;
-import com.mycompany.myapp.domain.User;
-import com.mycompany.myapp.security.AuthoritiesConstants;
+import <%=packageName%>.domain.PersistentAuditEvent;
+import <%=packageName%>.domain.User;
+import <%=packageName%>.security.AuthoritiesConstants;
 import <%=packageName%>.entitlements.HatchEntitlement;
 import <%=packageName%>.entitlements.HatchPermission;
 import <%=packageName%>.entitlements.inmemoryprovider.builder.EntitlementsBuilder;
