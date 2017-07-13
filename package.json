@@ -1,6 +1,6 @@
 {
   "name": "generator-jhipster-hatch-entitlements",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Enable entitlements on java objects based on spring roles",
   "keywords": [
     "yeoman-generator",

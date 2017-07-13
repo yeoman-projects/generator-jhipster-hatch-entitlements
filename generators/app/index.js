@@ -112,11 +112,6 @@ module.exports = JhipsterGenerator.extend({
         }
 
 
-        try {
-            this.registerModule('generator-jhipster-hatch-entitlements', 'entity', 'post', 'app', 'Add support for entitlements');
-        } catch (err) {
-            this.log(`${chalk.red.bold('WARN!')} Could not register as a jhipster entity post creation hook...\n`);
-        }
 
         this.template('src/main/java/package/config/_HatchAuthorizationConfiguration.java', `${javaDir}config/HatchAuthorizationConfiguration.java`);
 
@@ -129,6 +124,12 @@ module.exports = JhipsterGenerator.extend({
         this.template('src/main/java/package/security/entitlements/inmemoryprovider/_HatchEntitlementsInMemoryStore.java', `${javaDir}security/entitlements/inmemoryprovider/HatchEntitlementsInMemoryStore.java`);
         this.template('src/main/java/package/security/entitlements/inmemoryprovider/builder/_EntitlementsBuilder.java', `${javaDir}security/entitlements/inmemoryprovider/builder/EntitlementsBuilder.java`);
         this.template('src/main/java/package/security/entitlements/inmemoryprovider/builder/_PermissionBuilder.java', `${javaDir}security/entitlements/inmemoryprovider/builder/PermissionBuilder.java`);
+
+        try {
+            this.registerModule('generator-jhipster-hatch-entitlements', 'entity', 'post', 'app', 'Add support for entitlements');
+        } catch (err) {
+            this.log(`${chalk.red.bold('WARN!')} Could not register as a jhipster entity post creation hook...\n`);
+        }
     },
 
     install() {
