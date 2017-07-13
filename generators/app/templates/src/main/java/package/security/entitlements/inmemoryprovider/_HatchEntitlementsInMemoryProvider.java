@@ -1,8 +1,8 @@
-package <%=packageName%>.inmemoryprovider;
+package <%=packageName%>.entitlements.inmemoryprovider;
 
-import com.mycompany.myapp.security.hatch.HatchEntitlement;
-import com.mycompany.myapp.security.hatch.HatchEntitlementProvider;
-import com.mycompany.myapp.security.hatch.HatchPermission;
+import <%=packageName%>.entitlements.HatchEntitlement;
+import <%=packageName%>.entitlements.HatchEntitlementProvider;
+import <%=packageName%>.entitlements.HatchPermission;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

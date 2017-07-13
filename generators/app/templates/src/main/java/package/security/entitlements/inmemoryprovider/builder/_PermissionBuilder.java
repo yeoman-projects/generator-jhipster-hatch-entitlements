@@ -1,7 +1,7 @@
-package <%=packageName%>.inmemoryprovider.builder;
+package <%=packageName%>.entitlements.inmemoryprovider.builder;
 
-import com.mycompany.myapp.security.hatch.HatchEntitlement;
-import com.mycompany.myapp.security.hatch.HatchPermission;
+import <%=packageName%>.entitlements.HatchEntitlement;
+import <%=packageName%>.entitlements.HatchPermission;
 
 import java.util.*;
 import java.util.stream.Stream;

@@ -1,4 +1,4 @@
-package <%=packageName%>;
+package <%=packageName%>.entitlements;
 
 /**
  * Created by cra on 11.07.2017.

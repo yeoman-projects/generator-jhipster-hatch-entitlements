@@ -1,7 +1,7 @@
-package <%=packageName%>.custommethodsecurityexpression;
+package <%=packageName%>.entitlements.custommethodsecurityexpression;
 
-import com.mycompany.myapp.security.hatch.HatchEntitlementProvider;
-import com.mycompany.myapp.security.hatch.HatchPermission;
+import <%=packageName%>.entitlements.HatchEntitlementProvider;
+import <%=packageName%>.entitlements.HatchPermission;
 import org.slf4j.Logger;
 import org.springframework.security.access.expression.SecurityExpressionRoot;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionOperations;

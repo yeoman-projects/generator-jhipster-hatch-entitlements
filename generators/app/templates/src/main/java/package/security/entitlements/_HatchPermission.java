@@ -1,4 +1,4 @@
-package <%=packageName%>;
+package <%=packageName%>.entitlements;
 
 /**
  * Operations that can be performed on entities (domain objects) by a user.
