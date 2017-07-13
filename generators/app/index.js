@@ -34,24 +34,6 @@ module.exports = JhipsterGenerator.extend({
         }
     },
 
-    prompting() {
-        const prompts = [
-            {
-                type: 'input',
-                name: 'message',
-                message: 'Please put something',
-                default: 'hello world!'
-            }
-        ];
-
-        const done = this.async();
-        this.prompt(prompts).then((props) => {
-            this.props = props;
-            // To access props later use this.props.someOption;
-
-            done();
-        });
-    },
 
     writing() {
         // function to use directly template
@@ -78,9 +60,6 @@ module.exports = JhipsterGenerator.extend({
         const javaDir = `${jhipsterConstants.SERVER_MAIN_SRC_DIR + this.packageFolder}/`;
         const resourceDir = jhipsterConstants.SERVER_MAIN_RES_DIR;
         const webappDir = jhipsterConstants.CLIENT_MAIN_SRC_DIR;
-
-        // variable from questions
-        this.message = this.props.message;
 
         // show all variables
         this.log('\n--- some config read from config ---');
