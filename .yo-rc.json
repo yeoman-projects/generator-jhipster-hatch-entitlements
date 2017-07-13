@@ -1,0 +1,10 @@
+{
+  "generator-jhipster-module": {
+    "promptValues": {
+      "githubName": "mariusreusch",
+      "authorName": "Marius Reusch",
+      "authorEmail": "marius.reusch@gmail.com",
+      "authorUrl": ""
+    }
+  }
+}
