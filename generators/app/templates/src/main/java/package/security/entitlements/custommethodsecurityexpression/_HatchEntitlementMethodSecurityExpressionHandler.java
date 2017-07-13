@@ -1,6 +1,6 @@
-package <%=packageName%>.entitlements.custommethodsecurityexpression;
+package <%=packageName%>.security.entitlements.custommethodsecurityexpression;
 
-import <%=packageName%>.entitlements.HatchEntitlementProvider;
+import <%=packageName%>.security.entitlements.HatchEntitlementProvider;
 import org.aopalliance.intercept.MethodInvocation;
 import org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler;
 import org.springframework.security.access.expression.method.MethodSecurityExpressionOperations;

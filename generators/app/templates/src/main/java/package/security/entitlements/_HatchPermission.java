@@ -1,4 +1,4 @@
-package <%=packageName%>.entitlements;
+package <%=packageName%>.security.entitlements;
 
 /**
  * Operations that can be performed on entities (domain objects) by a user.

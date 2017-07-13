@@ -109,12 +109,11 @@ module.exports = JhipsterGenerator.extend({
         if (this.buildTool === 'maven') {
         }
         if (this.buildTool === 'gradle') {
-            console.log('hej hacth it is gradle');
         }
 
-        console.log('hatchhatch');
+        this.template('src/main/java/package/config/_HatchAuthorizationConfiguration.java', `${javaDir}config/HatchAuthorizationConfiguration.java`);
 
-        this.template('src/main/java/package/security/entitlements/_HatchEntitlement.java', `${javaDir}security/entitlements/_HatchEntitlement.java`);
+        this.template('src/main/java/package/security/entitlements/_HatchEntitlement.java', `${javaDir}security/entitlements/HatchEntitlement.java`);
         this.template('src/main/java/package/security/entitlements/_HatchEntitlementProvider.java', `${javaDir}security/entitlements/HatchEntitlementProvider.java`);
         this.template('src/main/java/package/security/entitlements/_HatchPermission.java', `${javaDir}security/entitlements/HatchPermission.java`);
         this.template('src/main/java/package/security/entitlements/custommethodsecurityexpression/_HatchEntitlementMethodSecurityExpressionHandler.java', `${javaDir}security/entitlements/custommethodsecurityexpression/HatchEntitlementMethodSecurityExpressionHandler.java`);
@@ -158,3 +157,14 @@ module.exports = JhipsterGenerator.extend({
         this.log('End of hatch-entitlements generator');
     }
 });
+
+
+/*##### USAGE #####
+To begin to work:
+    - launch: yarn install
+- link: yarn link
+- test your module in a JHipster project:
+    - go into your JHipster project
+- link to your module: yarn link generator-jhipster-hatch-entitlements
+- launch your module: yo jhipster-hatch-entitlements
+- then, come back here, and begin to code!*/

@@ -1,6 +1,6 @@
-package <%=packageName%>.entitlements.inmemoryprovider.builder;
+package <%=packageName%>.security.entitlements.inmemoryprovider.builder;
 
-import <%=packageName%>.entitlements.HatchEntitlement;
+import <%=packageName%>.security.entitlements.HatchEntitlement;
 
 import java.util.ArrayList;
 import java.util.List;

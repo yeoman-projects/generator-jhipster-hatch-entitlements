@@ -1,4 +1,4 @@
-package <%=packageName%>.entitlements;
+package <%=packageName%>.security.entitlements;
 
 import java.util.List;
 

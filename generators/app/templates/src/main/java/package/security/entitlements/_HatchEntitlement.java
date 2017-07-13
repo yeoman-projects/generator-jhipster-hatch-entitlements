@@ -1,4 +1,4 @@
-package <%=packageName%>.entitlements;
+package <%=packageName%>.security.entitlements;
 
 /**
  * Created by cra on 11.07.2017.
