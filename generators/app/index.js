@@ -125,7 +125,7 @@ module.exports = JhipsterGenerator.extend({
         this.template('src/main/java/package/security/entitlements/inmemoryprovider/builder/_PermissionBuilder.java', `${javaDir}security/entitlements/inmemoryprovider/builder/PermissionBuilder.java`);
 
         try {
-            this.registerModule('generator-jhipster-hatch-entitlements', 'app', 'post', 'app', 'Add support for entitlements');
+            this.registerModule('generator-jhipster-hatch-entitlements', 'entity', 'post', 'app', 'Add support for entitlements');
         } catch (err) {
             this.log(`${chalk.red.bold('WARN!')} Could not register as a jhipster entity post creation hook...\n`);
         }
